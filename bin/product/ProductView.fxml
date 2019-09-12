@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="500.0" style="-fx-background-image: url(&quot;file:///F:/New%20folder%20(2)/Garment/src/bill/apparel-attire-blur-994517.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="product.ProductViewController">
+   <children>
+      <Label layoutX="10.0" layoutY="14.0" text="Product Information" textFill="#bf24249b">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="196.0" text="Product_ID" textFill="#ebeaea" />
+      <Label layoutX="72.0" layoutY="374.0" text="Discount" textFill="#ebeaea" />
+      <Label layoutX="70.0" layoutY="328.0" text="Brand_Price" textFill="#ebeaea" />
+      <Label layoutX="73.0" layoutY="284.0" prefHeight="21.0" prefWidth="102.0" text="Brand_Name" textFill="#ebeaea" />
+      <Label layoutX="72.0" layoutY="238.0" text="Bill_No" textFill="#ebeaea" />
+      <TextField fx:id="Product_id" layoutX="200.0" layoutY="191.0" onMouseClicked="#dd" />
+      <TextField fx:id="Bill_no" layoutX="200.0" layoutY="233.0" />
+      <TextField fx:id="brand_name" layoutX="200.0" layoutY="279.0" />
+      <TextField fx:id="brand_price" layoutX="200.0" layoutY="323.0" />
+      <TextField fx:id="discount" layoutX="200.0" layoutY="369.0" />
+      <Button layoutX="218.0" layoutY="471.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Label layoutX="70.0" layoutY="423.0" text="Net_Price" textFill="#ebeaea" />
+      <TextField fx:id="net_price" layoutX="200.0" layoutY="418.0" />
+      <Button fx:id="btnHome" layoutX="186.0" layoutY="683.0" mnemonicParsing="false" onAction="#HOME" prefHeight="69.0" prefWidth="166.0" text="HOME" textFill="#9e9393">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Label fx:id="save" layoutX="183.0" layoutY="521.0" prefHeight="21.0" prefWidth="153.0" textFill="#e81d1d" />
+   </children>
+</AnchorPane>

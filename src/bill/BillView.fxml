@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="500.0" style="-fx-background-image: url(&quot;file:///F:/New%20folder%20(2)/Garment/src/bill/apparel-attire-blur-994517.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bill.BillViewController">
+   <children>
+      <Label layoutX="11.0" layoutY="14.0" text="Bill Information" textFill="#8e4790">
+         <font>
+            <Font size="69.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bill_no" layoutX="157.0" layoutY="172.0" onMouseClicked="#saved" />
+      <TextField fx:id="amount" layoutX="157.0" layoutY="268.0" />
+      <TextField fx:id="customer_id" layoutX="157.0" layoutY="220.0" />
+      <Label layoutX="51.0" layoutY="177.0" text="Bill_No." textFill="#f2ebeb" />
+      <Label layoutX="51.0" layoutY="225.0" text="Customer_I.D" textFill="#f2ebeb" />
+      <Label layoutX="49.0" layoutY="273.0" text="Amount" textFill="#f2ebeb" />
+      <DatePicker fx:id="bill_date" layoutX="157.0" layoutY="320.0" />
+      <Label layoutX="49.0" layoutY="325.0" text="Date" textFill="#f2ebeb" />
+      <Button fx:id="btnpro" layoutX="126.0" layoutY="684.0" mnemonicParsing="false" onAction="#product_info" text="Product_Info" textFill="#ad99998e">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="212.0" layoutY="385.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Label fx:id="saved" layoutX="157.0" layoutY="432.0" prefHeight="21.0" prefWidth="170.0" text=" " textFill="#f20d0d" />
+      <Button layoutX="68.0" layoutY="471.0" mnemonicParsing="false" onAction="#QWERTY" text="Button" />
+   </children>
+</AnchorPane>

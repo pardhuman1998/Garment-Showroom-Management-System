@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="500.0" style="-fx-background-image: url(&quot;file:///F:/New%20folder%20(2)/Garment/src/customer/apparel-attire-blur-994517.jpg&quot;);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer.CustomerViewController">
+   <children>
+      <Label layoutX="7.0" layoutY="25.0" text="Customer Information" textFill="#152822">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="170.0" text="Customer_I.D" textFill="#ecf1f2" />
+      <Label layoutX="62.0" layoutY="208.0" text="First_Name" textFill="#ebeaea" />
+      <Label layoutX="63.0" layoutY="246.0" text="Last_Name" textFill="WHITE" />
+      <Label layoutX="63.0" layoutY="370.0" text="Age" textFill="WHITE" />
+      <Label layoutX="63.0" layoutY="282.0" text="Gender" textFill="WHITE" />
+      <Label layoutX="61.0" layoutY="327.0" text="Address" textFill="WHITE" />
+      <TextField fx:id="customer_id" layoutX="164.0" layoutY="165.0" onMouseClicked="#success" />
+      <TextField fx:id="First_name" layoutX="164.0" layoutY="203.0" />
+      <TextField fx:id="last_name" layoutX="164.0" layoutY="241.0" />
+      <RadioButton fx:id="Others" layoutX="315.0" layoutY="282.0" mnemonicParsing="false" text="Others">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Male" layoutX="164.0" layoutY="282.0" mnemonicParsing="false" text="Male" toggleGroup="$gender" />
+      <RadioButton fx:id="Female" layoutX="232.0" layoutY="282.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+      <TextField fx:id="Address" layoutX="164.0" layoutY="322.0" />
+      <TextField fx:id="Age" layoutX="164.0" layoutY="365.0" prefHeight="31.0" prefWidth="42.0" />
+      <Button fx:id="Bill_info" layoutX="136.0" layoutY="676.0" mnemonicParsing="false" onAction="#Bill_Info" prefHeight="68.0" prefWidth="198.0" text="Bill_Info" textFill="#b29393">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button layoutX="158.0" layoutY="415.0" mnemonicParsing="false" onAction="#Save" prefHeight="31.0" prefWidth="72.0" text="Save" />
+      <Button layoutX="366.0" layoutY="165.0" mnemonicParsing="false" onAction="#Fetch" prefHeight="31.0" prefWidth="72.0" text="Fetch" />
+      <Button layoutX="251.0" layoutY="415.0" mnemonicParsing="false" onAction="#update" text="Update" />
+      <Button layoutX="339.0" layoutY="415.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Label fx:id="lblSuccess" layoutX="154.0" layoutY="462.0" prefHeight="21.0" prefWidth="162.0" textFill="#f81f1f" />
+   </children>
+</AnchorPane>
